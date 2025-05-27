@@ -1,1 +1,123 @@
 /* STYLE FOR YOU MAIN.HTML */
+@font-face{
+    font-family: pixel;
+    src: url("../assets/fonts/advanced-pixel-7/advanced_pixel-7.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: pixel;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(174, 134, 230) 0%, rgb(156, 101, 223) 100%);
+}
+
+h1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 70px;
+    font-size: 80px;
+    color: rgb(28, 28, 125);
+}
+
+/* Div 1 VD */
+.Div1game{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(205, 205, 205);
+    font-size: 20px;
+    margin: 30px;
+    margin-top: 50px;
+    width: 700px;
+    height: 300px;
+}
+
+.Div1game h2{
+    font-size: 40px;
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+}
+
+/* .Div1game img{
+    width: auto;
+    height: 210px;
+    margin-left: 45%;
+} */
+
+.stars1{
+    color: yellow;
+    font-size: 5rem;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+/* Div 2 VD */
+.Div2game{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(205, 205, 205);
+    font-size: 20px;
+    width: 700px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+.Div2game h2{
+    font-size: 40px;
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+}
+
+/* .Div2game img{
+    width: auto;
+    height: 210px;
+    margin-left: 45%;
+} */
+
+.stars2{
+    color: yellow;
+    font-size: 5rem;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+/* Div 3 VD */
+.Div3game{
+    float: right;
+    padding: 5px;
+    background-color: rgb(205, 205, 205);
+    font-size: 20px;
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.Div3game h2{
+    font-size: 40px;
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+}
+
+/* .Div3game img{
+    width: auto;
+    height: 210px;
+    margin-left: 45%;
+} */
+
+.stars3{
+    color: yellow;
+    font-size: 5rem;
+    margin-left: 40%;
+    margin-top: 15%;
+}
