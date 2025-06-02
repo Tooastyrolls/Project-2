@@ -10,7 +10,7 @@
 }
 
 body{
-    background: linear-gradient(180deg, rgb(174, 134, 230) 0%, rgb(156, 101, 223) 100%);
+    background: linear-gradient(180deg, #6DA0E1 0%, #2F80E4 50%, #5B61B2 100%);
 }
 
 /* Header */
@@ -19,7 +19,7 @@ ul{
     float: left;
     justify-content: space-between;
     gap: 30px;
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 32px;
     margin-right: 90px;
     font-size: 17px;
@@ -31,7 +31,7 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    padding: 10px 60px;
+    padding: 10px 40px;
     border: 2px solid white;
     border-radius: 30px;
     color: aliceblue;
@@ -46,14 +46,15 @@ h1{
     vertical-align: middle;
     margin-top: 10px;
     font-size: 75px;
-    color: rgb(28, 28, 125);
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 5px rgb(0, 21, 255);
 }
 
-input[type=text] {
+input[type=text]{
     display: inline-flex;
     float: right;
     margin-top: 30px;
-    margin-right: 230px;
+    margin-right: 200px;
     margin-left: 70px;
     padding-top: 5px;
     padding-right: 40px;
@@ -70,6 +71,7 @@ input[type=text] {
     border-radius: 50%;
     margin-top: 10px;
     margin-left: 410px;
+    border: 2px solid #fff;
 }
 
 /* Daily suggestions */
@@ -77,16 +79,22 @@ input[type=text] {
     display: block;
     padding: 20px;
     gap: 20px;
-    background-color: rgb(205, 205, 205);
+    background: linear-gradient(135deg, #7209e3 0%, #2b0fff 100%);
+    color: white;
     font-size: 20px;
     margin: 30px;
+    border-radius: 20px;
 }
 
 .suggestions-div h2{
     font-size: 65px;
     text-align: left;
     margin-left: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.suggestions-div b{
+    color: rgb(238, 246, 91);
 }
 
 .side-by-side{
@@ -99,15 +107,44 @@ input[type=text] {
     height: 210px;
 }
 
+button{
+    display: block;
+    border: 3px solid white;
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color:#af7dff;
+    font-family: pixel;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: rotate(10deg);
+}
+
+button:hover{
+    background-color: #0011ff;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    margin-bottom: 15px; 
+}
+
 /* Bottom Half */
 .bottomhalf{
     display: inline-flex;
 }
 
-/* Gaming Context */
+/* Games */
 .games{
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 .games h2{
@@ -115,18 +152,35 @@ input[type=text] {
     color: white;
 }
 
-.games img{
+.game-with-avatar {
     display: inline-block;
-    justify-content: space-between;
-    width: auto;
-    height: 250px;
-    margin-right: 70px;
+    margin: 10px 20px;
+}
+  
+.game-with-avatar img:first-child {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+}
+  
+.review-avatar {
+    margin-top: 6px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}  
+
+.stars1{
+    display: inline-block;
+    color: yellow;
+    font-size: 3rem;
 }
 
 /* Chatbox */
 i{
     color: white;
-    background-color: rgb(112, 146, 226);
+    background-color: rgb(35, 35, 255);
     font-size: 50px;
     padding-left: 9%;
     padding-right: 69.7%
@@ -134,7 +188,7 @@ i{
 
 .chatbox{
     display: inline-block;
-    background-color: rgb(52, 109, 243);
+    background-color: rgb(232, 233, 191);
     margin-bottom: 10px;
     padding-right: 1px;
 }

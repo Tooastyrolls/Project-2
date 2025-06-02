@@ -1,0 +1,129 @@
+@font-face {
+  font-family: pixel;
+  src: url("./assets/fonts/advanced-pixel-7/advanced_pixel-7.ttf");
+}
+  
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: pixel;
+}
+
+body{
+  background-image: url("assets/images/eventsback3.gif");
+  background-size: 100%;
+}
+
+/* Navigation */
+.top-nav{
+  background-color: #3f2effb0;
+  padding: 5px;
+  text-align: left;
+}
+  
+.top-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.top-nav li{
+  display: inline;
+}
+  
+.top-nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 3px 3px;
+  transition: background-color 0.3s ease;
+}
+  
+.top-nav a:hover{
+  background-color: #1e00ff;
+}
+  
+/* Calendar Header */
+.calendar-header{
+  text-align: center;
+  padding-top: 10px;
+  animation: slideDown 1.2s ease-out;
+}
+  
+.calendar-title{
+  text-align: center;
+    font-size: 90px;
+    margin: 5px 0;
+    color: #ffffff;
+    text-shadow: 4px 4px 5px #fbdc2b;
+}
+
+/* Main Calendar */
+.calendar-container{
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(254, 254, 254, 0.433);
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+  
+.calendar-grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  color: white;
+}
+  
+.day, .day-name{
+  background: #1a77e89d;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 15px;
+  text-align: left;
+  min-height: 70px;
+}
+  
+.day-name{
+  background: #212eeb;
+  text-align: center;
+  font-size: 24px;
+  height: auto;
+  width: 170px;
+}
+  
+.day.event{
+  background: #46daf0;
+  animation: pulse 2s infinite ease-in-out;
+  color: white;
+ }
+  
+.day.event span{
+  display: block;
+  margin-top: 5px;
+  font-size: 26px;
+}
+  
+/* Animations */
+@keyframes pulse{
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 229, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 12px 15px rgba(255, 61, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 61, 153, 0);
+  }
+}
+  
+@keyframes slideDown{
+  from {
+    transform: translateY(-50px); opacity: 0;
+  }
+  to {
+    transform: translateY(0); opacity: 1;
+  }
+}
